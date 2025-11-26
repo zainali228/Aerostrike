@@ -1,0 +1,9 @@
+scapy
+matplotlib
+numpy
+pandas
+scikit-learn
+joblib
+jinja2
+reportlab
+cairosvg
