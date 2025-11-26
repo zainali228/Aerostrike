@@ -81,7 +81,7 @@ Follow these steps to install and run Aerostrike (AI-Powered WiFi Penetration Te
 
 > **Clone** **the** **Repository**
 >
-> git clone https://github.com/YourUsername/AeroStrike.git
+> git clone https://github.com/zainali228/Aerostrike.git
 >
 > **Move** **Into** **Project** **Folder**
 >
