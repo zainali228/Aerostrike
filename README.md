@@ -36,44 +36,25 @@ This adapter supports: ✔ Monitor Mode
 Aerostrike/
 
 │── main.py │── app.py │
-
 ├── modules/
-
 │ ├── gui_manager.py │ ├── pentest_core.py
-
 │ └── report_generator.py │
-
 ├── src/
-
 │ ├── pentest_controller.py │ ├── pentest_core.py
-
 │ ├── wiﬁpentest_gui.py │ ├── device_detector.py
-
 │ ├── network_monitor.py │ ├── trafﬁc_analysis.py
-
 │ ├── post_exploitation.py
-
 │ ├── comprehensive_report.py │ ├── advanced_reports.py
-
 │ └── ai_assistant.py │
-
 ├── data/
-
 │ ├── networks/latest_scan.json │ ├── attacks/latest_results.json
-
 │ ├── network_trafﬁc/latest_results.json │ ├──
 post_exploitation/latest_results.json │ ├── common_wiﬁ_passwords.txt
-
 │ ├── default_creds.txt │ ├── wps_pins.txt
-
 │ └── cve_database/ │
-
 ├── static/
-
 ├── templates/dialogs/ ├── logs/
-
 ├── reports/
-
 └── run_wiﬁ_pentest.sh
 
 **Installation** **(Kali** **Linux)**
