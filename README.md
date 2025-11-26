@@ -1,9 +1,6 @@
-**Aerostrike** **(AI-Powered** **Wiﬁ** **Penetration** **Testing**
-**Tool)**
+# **AEROSTRIKE** **(AI-Powered** **Wiﬁ** **Penetration** **Testing** **Tool)**
 
-Aerostrike is a Linux‑based autonomous wireless penetration testing tool
-that combines advanced intelligence, automation and multi‑module attack
-capabilities.
+Aerostrike is a Linux‑based autonomous wireless penetration testing tool that combines advanced intelligence, automation and multi‑module attack capabilities.
 
 > It is designed for users who:
 >
@@ -15,8 +12,7 @@ capabilities.
 >
 > ● Are non‑technical but still want to run security checks easily
 
-This tool provides scanning, attacking, monitoring, AI guidance,
-reporting and more all inside one uniﬁed interface.
+This tool provides scanning, attacking, monitoring, AI guidance, reporting and more all inside one uniﬁed interface.
 
 **Recommended** **WiFi** **Adapter**
 
@@ -81,8 +77,7 @@ post_exploitation/latest_results.json │ ├── common_wiﬁ_passwords.txt
 
 **Installation** **(Kali** **Linux)**
 
-Follow these steps to install and run Aerostrike (AI-Powered WiFi
-Penetration Testing Tool):
+Follow these steps to install and run Aerostrike (AI-Powered WiFi Penetration Testing Tool):
 
 > **Clone** **the** **Repository**
 >
@@ -116,8 +111,7 @@ When the tool starts:
 >
 > ● Shows only the interfaces that support monitor mode
 >
-> ● If a wrong or unsupported interface is selected, it displays a
-> warning
+> ● If a wrong or unsupported interface is selected, it displays a warning
 
 **2.** **Wireless** **Scanning**
 
@@ -131,8 +125,7 @@ The tool will automatically:
 
 ✔ Detect all Nearby Access Points
 
-✔ Display SSID, BSSID, Channel, Vendor, Signal Strength, Encryption &
-  Connected Clients etc.
+✔ Display SSID, BSSID, Channel, Vendor, Signal Strength, Encryption & Connected Clients etc.
 
 **Live** **logs** **are** **shown** **directly** **in** **the** **GUI.**
 
@@ -142,9 +135,7 @@ The tool will automatically:
 
 The Test All option in Aerostrike is fully autonomous.
 
-If you want Default Credentials Check, WEP Attack, WPS PIN Attack, IP
-Address Detection, WPA Handshake Capture, Port Scanning to run
-automatically, you simply click Test All.
+If you want Default Credentials Check, WEP Attack, WPS PIN Attack, IP Address Detection, WPA Handshake Capture, Port Scanning to run automatically, you simply click Test All.
 
 In this mode, the tool:
 
@@ -170,11 +161,10 @@ For every network, the tool automatically performs:
 >
 > **2.** **Manual** **Attack** **Modules** **(Single** **Network)**
 
-If you want to test a speciﬁc network manually, Aerostrike gives you
-complete manual control.
+If you want to test a speciﬁc network manually, Aerostrike gives you complete manual control.
 
-After selecting any single network, you can choose which attack you want
-to run. The available manual options include:
+After selecting any single network, you can choose which attack you want to run. 
+The available manual options include:
 
 > ● WPA Handshake Capture
 > 
@@ -184,13 +174,11 @@ to run. The available manual options include:
 >
 > ● Default Credentials Check
 
-The beneﬁt of this mode is that you can perform only the attack you
-need, without running full automation.
+The beneﬁt of this mode is that you can perform only the attack you need, without running full automation.
 
 **4.** **Post‑Exploitation**
 
-After Aerostrike captures a handshake and retrieves a password, it will
-ask:
+After Aerostrike captures a handshake and retrieves a password, it will ask:
 
 **Which** **network** **do** **you** **want** **to** **connect** **to?**
 
@@ -238,8 +226,7 @@ Aerostrike provides a powerful and ﬂexible reporting engine that can generate 
 
 > **1.** **Simple** **Report** **(Without** **API** **Key)**
 
-If you don’t have an API key, you can still use the standard reporting
-mode.
+If you don’t have an API key, you can still use the standard reporting mode.
 
 In this mode, Aerostrike will generate:
 
@@ -253,8 +240,7 @@ In this mode, Aerostrike will generate:
 >
 > ● Local risk scoring and recommendations
 
-Everything discovered during scanning and attacking is included inside a
-single, clean, professional report.
+Everything discovered during scanning and attacking is included inside a single, clean, professional report.
 
 > **2.** **Advance** **Reports** **(If** **API** **Key** **Available)**
 
@@ -272,8 +258,7 @@ If you have an API key, Aerostrike unlocks advanced features:
 > 
 > ● Graphs and visual charts
 
-This allows you to get professional-grade, real-time security advice
-directly in your report.
+This allows you to get professional-grade, real-time security advice directly in your report.
 
 **8.** **Advanced** **Settings**
 
