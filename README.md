@@ -7,8 +7,9 @@ capabilities.
 
 > It is designed for users who:
 >
-> ● Want to secure their WiFi / wireless networks ● Want to learn
-> cybersecurity
+> ● Want to secure their WiFi / wireless networks
+> 
+> ● Want to learn cybersecurity
 >
 > ● Want to perform professional penetration tests
 >
@@ -21,10 +22,12 @@ reporting and more all inside one uniﬁed interface.
 
 For the best performance, the recommended WiFi adapter is:
 
-**ALFA** **AWUS036ACH** **(Highly** **Recommended)**
+*ALFA* *AWUS036ACH* *(Highly* *Recommended)*
 
-This adapter supports: ✔ Monitor Mode
+This adapter supports: 
 
+> ✔ Monitor Mode
+>
 > ✔ Packet Injection
 >
 > ✔ Dual Band (2.4GHz + 5GHz)
@@ -36,25 +39,44 @@ This adapter supports: ✔ Monitor Mode
 Aerostrike/
 
 │── main.py │── app.py │
+
 ├── modules/
+
 │ ├── gui_manager.py │ ├── pentest_core.py
+
 │ └── report_generator.py │
+
 ├── src/
+
 │ ├── pentest_controller.py │ ├── pentest_core.py
+
 │ ├── wiﬁpentest_gui.py │ ├── device_detector.py
+
 │ ├── network_monitor.py │ ├── trafﬁc_analysis.py
+
 │ ├── post_exploitation.py
+
 │ ├── comprehensive_report.py │ ├── advanced_reports.py
+
 │ └── ai_assistant.py │
+
 ├── data/
+
 │ ├── networks/latest_scan.json │ ├── attacks/latest_results.json
+
 │ ├── network_trafﬁc/latest_results.json │ ├──
 post_exploitation/latest_results.json │ ├── common_wiﬁ_passwords.txt
+
 │ ├── default_creds.txt │ ├── wps_pins.txt
+
 │ └── cve_database/ │
+
 ├── static/
+
 ├── templates/dialogs/ ├── logs/
+
 ├── reports/
+
 └── run_wiﬁ_pentest.sh
 
 **Installation** **(Kali** **Linux)**
@@ -105,16 +127,18 @@ The tool will automatically:
 
 ✔ Enable monitor mode
 
-✔Scan all nearby WiFi networks ✔Detect all Nearby Access Points
+✔ Scan all nearby WiFi networks 
 
-✔Display SSID, BSSID, Channel, Vendor, Signal Strength, Encryption &
-Connected Clients etc.
+✔ Detect all Nearby Access Points
+
+✔ Display SSID, BSSID, Channel, Vendor, Signal Strength, Encryption &
+  Connected Clients etc.
 
 **Live** **logs** **are** **shown** **directly** **in** **the** **GUI.**
 
 **3.** **Attack** **Options**
 
-> **1.** 🔹 **Test** **All** **(Autonomous** **Mode)**
+> **1.** **Test** **All** **(Autonomous** **Mode)**
 
 The Test All option in Aerostrike is fully autonomous.
 
@@ -126,18 +150,23 @@ In this mode, the tool:
 
 > ● Analyzes all detected networks
 >
-> ● Starts with the strongest signal network ● Then tests each network
-> one by one
+> ● Starts with the strongest signal network
+> 
+> ● Then tests each network one by one
 
 For every network, the tool automatically performs:
 
-> ● Default Credentials Check ● WEP Attack
+> ● Default Credentials Check
+> 
+> ● WEP Attack
 >
 > ● WPS PIN Attack
 >
 > ● IP Address Detection
 >
-> ● WPA Handshake Capture ● Port Scanning
+> ● WPA Handshake Capture
+> 
+> ● Port Scanning
 >
 > **2.** **Manual** **Attack** **Modules** **(Single** **Network)**
 
@@ -147,7 +176,9 @@ complete manual control.
 After selecting any single network, you can choose which attack you want
 to run. The available manual options include:
 
-> ● WPA Handshake Capture ● WPS PIN Attack
+> ● WPA Handshake Capture
+> 
+> ● WPS PIN Attack
 >
 > ● WEP Attack
 >
@@ -165,15 +196,25 @@ ask:
 
 Once selected, the tool will:
 
-✔ Automatically connect ✔Scan the internal network ✔Detect live devices
+✔ Automatically connect 
 
-✔Perform vulnerability analysis ✔Identify open ports and services
+✔ Scan the internal network 
+
+✔ Detect live devices
+
+✔ Perform vulnerability analysis 
+
+✔ Identify open ports and services
 
 **5.** **Network** **Monitoring**
 
 Real‑time monitoring includes:
 
-> ● Suspicious device alerts ● Packet anomaly analysis ● Trafﬁc spikes
+> ● Suspicious device alerts
+> 
+> ● Packet anomaly analysis
+> 
+> ● Trafﬁc spikes
 >
 > ● Live graphs & logs
 
@@ -185,15 +226,15 @@ Aerostrike includes a smart AI assistant that:
 >
 > ● Recommends the best strategy
 >
-> ● Suggests ﬁxes and security improvements ● Auto‑generates report
-> explanations
+> ● Suggests ﬁxes and security improvements
+> 
+> ● Auto‑generates report explanations
 >
 > ● Helps beginners navigate every feature
 
 **7.** **Professional** **Reporting** **System**
 
-Aerostrike provides a powerful and ﬂexible reporting engine that can
-generate high-quality security reports based on your scans and attacks.
+Aerostrike provides a powerful and ﬂexible reporting engine that can generate high-quality security reports based on your scans and attacks.
 
 > **1.** **Simple** **Report** **(Without** **API** **Key)**
 
@@ -204,9 +245,11 @@ In this mode, Aerostrike will generate:
 
 > ● A complete PDF report
 >
-> ● All ﬁndings from scanning ● All attack results
+> ● All ﬁndings from scanning
+> 
+> ● All attack results
 >
-> ● Device details, vulnerabilities, and logs
+> ● Device details, vulnerabilitie, and logs
 >
 > ● Local risk scoring and recommendations
 
@@ -219,19 +262,22 @@ If you have an API key, Aerostrike unlocks advanced features:
 
 > ● Full PDF security reports
 >
-> ● Summary + detailed CVE-based analysis ● Device-level risk scoring
+> ● Summary + detailed CVE-based analysis
+> 
+> ● Device-level risk scoring
 >
 > ● Complete attack logs
 >
-> ● Recommendations section ● Graphs and visual charts
+> ● Recommendations section
+> 
+> ● Graphs and visual charts
 
 This allows you to get professional-grade, real-time security advice
 directly in your report.
 
 **8.** **Advanced** **Settings**
 
-The **Advanced** **Settings** tab provides powerful conﬁguration options
-that allow you to fully customize how Aerostrike performs each attack.
+The **Advanced** **Settings** tab provides powerful conﬁguration options that allow you to fully customize how Aerostrike performs each attack.
 
 Inside this section, you can:
 
@@ -239,17 +285,15 @@ Inside this section, you can:
 
 You can modify the settings for every attack type individually, such as:
 
-> ● WAP Attack:Custom wordlist selection, Deauthentication Packet Count,
-> Capture Timeout (Seconds)
+> ● WAP Attack:Custom wordlist selection, Deauthentication Packet Count, Capture Timeout (Seconds)
 >
-> ● WPS Attack: WPS PIN list selection, WPS Attack Timeout (Seconds),
-> Max Pin Attempts
+> ● WPS Attack: WPS PIN list selection, WPS Attack Timeout (Seconds), Max Pin Attempts
 >
-> ● WEP Attack: WEP Attack Timeout (Seconds), IV Collection Goal ●
-> Default Credentials: Default Credentials List
+> ● WEP Attack: WEP Attack Timeout (Seconds), IV Collection Goal
+> 
+> ●Default Credentials: Default Credentials List
 >
-> ● Scanning: Channel Hop Interval (Seconds), Default Scan Time
-> (Seconds)
+> ● Scanning: Channel Hop Interval (Seconds), Default Scan Time (Seconds)
 
 ✔ **Interface** **Management**
 
@@ -261,29 +305,43 @@ You can conﬁgure network interfaces, including:
 
 You can switch the tool’s appearance at any time:
 
-> ● Dark mode ● Light mode
+> ● Dark mode
+> 
+> ● Light mode
 
 The interface settings let you personalize the user experience:
 
-> ● Console log font size ● UI font size
+> ● Console log font size
+> 
+> ● UI font size
 
 **Conclusion**
 
 Aerostrike is a **complete** **AI‑powered** **wireless** **penetration**
 **testing** **framework** that provides:
 
-✔ Offensive capabilities
-
-> ✔ Defensive network monitoring ✔ Professional reporting
+> ✔ Offensive capabilities
+>
+> ✔ Defensive network monitoring
+> 
+> ✔ Professional reporting
 >
 > ✔ Full automation
 >
-> ✔ Real‑world attack modules ✔ Beginner‑friendly design
+> ✔ Real‑world attack modules
+> 
+> ✔ Beginner‑friendly design
 
 A perfect ﬁt for:
 
 > ● Students
 >
-> ● Cybersecurity learners ● Network administrators ● Red team operators
+> ● Cybersecurity learners
+> 
+> ● Network administrators
+> 
+> ● Red team operators
 >
-> ● Home network security ● IoT penetration testing
+> ● Home network security
+> 
+> ● IoT penetration testing
