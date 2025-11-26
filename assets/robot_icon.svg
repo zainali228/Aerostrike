@@ -1,0 +1,45 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Robot head -->
+  <rect x="30" y="20" width="68" height="50" rx="10" fill="#3d3d3d" stroke="#ffffff" stroke-width="2"/>
+  <rect x="34" y="25" width="60" height="40" rx="8" fill="#2d2d2d" stroke-width="2"/>
+  
+  <!-- Eyes -->
+  <circle cx="50" cy="45" r="10" fill="#480B86" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="78" cy="45" r="10" fill="#480B86" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="50" cy="45" r="5" fill="#9F44D3"/>
+  <circle cx="78" cy="45" r="5" fill="#9F44D3"/>
+  <circle cx="52" cy="42" r="2" fill="#ffffff"/>
+  <circle cx="80" cy="42" r="2" fill="#ffffff"/>
+  
+  <!-- Antennas -->
+  <rect x="35" cy="12" width="4" height="8" rx="2" fill="#3d3d3d" stroke="#ffffff" stroke-width="1"/>
+  <rect x="89" cy="12" width="4" height="8" rx="2" fill="#3d3d3d" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- Robot body -->
+  <rect x="38" y="70" width="52" height="40" rx="5" fill="#3d3d3d" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Arms -->
+  <rect x="18" y="75" width="20" height="8" rx="4" fill="#3d3d3d" stroke="#ffffff" stroke-width="1.5"/>
+  <rect x="90" y="75" width="20" height="8" rx="4" fill="#3d3d3d" stroke="#ffffff" stroke-width="1.5"/>
+  
+  <!-- Legs -->
+  <rect x="45" y="110" width="10" height="15" rx="3" fill="#3d3d3d" stroke="#ffffff" stroke-width="1.5"/>
+  <rect x="73" y="110" width="10" height="15" rx="3" fill="#3d3d3d" stroke="#ffffff" stroke-width="1.5"/>
+  
+  <!-- Purple glow effect -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <linearGradient id="eyeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9F44D3"/>
+      <stop offset="100%" stop-color="#4109AA"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Add glow to eyes -->
+  <circle cx="50" cy="45" r="12" fill="url(#eyeGradient)" filter="url(#glow)" opacity="0.5"/>
+  <circle cx="78" cy="45" r="12" fill="url(#eyeGradient)" filter="url(#glow)" opacity="0.5"/>
+</svg>
