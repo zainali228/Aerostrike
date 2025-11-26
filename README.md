@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="./Aerostrike Banner.png" alt="Aerostrike Banner" />
-</p>
+# **AEROSTRIKE** **(AI-Powered** **Wiﬁ** **Penetration** **Testing** **Tool)**
 
 Aerostrike is a Linux‑based autonomous wireless penetration testing tool that combines advanced intelligence, automation and multi‑module attack capabilities.
 
