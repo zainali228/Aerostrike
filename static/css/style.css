@@ -1,0 +1,475 @@
+/* 
+ * NetworkPentestPro Styles
+ * Main stylesheet for the application
+ */
+
+/* Light and Dark theme variables */
+:root {
+  /* Light theme */
+  --light-bg-primary: #f0f0f0;
+  --light-bg-secondary: #ffffff;
+  --light-text-primary: #000000;
+  --light-text-secondary: #444444;
+  --light-border: #cccccc;
+  --light-accent: #0066cc;
+  --light-highlight: #99ccff;
+  --light-error: #cc0000;
+  --light-warning: #cc6600;
+  --light-success: #00cc00;
+  --light-info: #0099cc;
+
+  /* Dark theme */
+  --dark-bg-primary: #2d2d2d;
+  --dark-bg-secondary: #1e1e1e;
+  --dark-text-primary: #e0e0e0;
+  --dark-text-secondary: #aaaaaa;
+  --dark-border: #444444;
+  --dark-accent: #0099ff;
+  --dark-highlight: #004488;
+  --dark-error: #ff5555;
+  --dark-warning: #ffaa55;
+  --dark-success: #55ff55;
+  --dark-info: #55aaff;
+}
+
+/* Base styles */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: var(--light-bg-primary);
+  color: var(--light-text-primary);
+}
+
+body.dark {
+  background-color: var(--dark-bg-primary);
+  color: var(--dark-text-primary);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.light header {
+  background-color: var(--light-bg-secondary);
+  border-bottom: 1px solid var(--light-border);
+}
+
+.dark header {
+  background-color: var(--dark-bg-secondary);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Main content area */
+main {
+  padding: 20px 0;
+}
+
+/* Card style for sections */
+.card {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.light .card {
+  background-color: var(--light-bg-secondary);
+  border: 1px solid var(--light-border);
+}
+
+.dark .card {
+  background-color: var(--dark-bg-secondary);
+  border: 1px solid var(--dark-border);
+}
+
+.card-header {
+  padding: 15px;
+  font-weight: bold;
+}
+
+.light .card-header {
+  background-color: var(--light-accent);
+  color: white;
+}
+
+.dark .card-header {
+  background-color: var(--dark-accent);
+  color: white;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.light th {
+  background-color: var(--light-highlight);
+  border-bottom: 2px solid var(--light-border);
+}
+
+.dark th {
+  background-color: var(--dark-highlight);
+  border-bottom: 2px solid var(--dark-border);
+}
+
+.light td {
+  border-bottom: 1px solid var(--light-border);
+}
+
+.dark td {
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.light tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Forms */
+form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border 0.3s, background-color 0.3s;
+}
+
+.light input, .light select, .light textarea {
+  border: 1px solid var(--light-border);
+  background-color: white;
+  color: var(--light-text-primary);
+}
+
+.dark input, .dark select, .dark textarea {
+  border: 1px solid var(--dark-border);
+  background-color: #333333;
+  color: var(--dark-text-primary);
+}
+
+.light input:focus, .light select:focus, .light textarea:focus {
+  border-color: var(--light-accent);
+  outline: none;
+}
+
+.dark input:focus, .dark select:focus, .dark textarea:focus {
+  border-color: var(--dark-accent);
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 14px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--light-accent);
+  color: white;
+}
+
+.btn-danger {
+  background-color: var(--light-error);
+  color: white;
+}
+
+.btn-warning {
+  background-color: var(--light-warning);
+  color: white;
+}
+
+.btn-success {
+  background-color: var(--light-success);
+  color: white;
+}
+
+.dark .btn-primary {
+  background-color: var(--dark-accent);
+  color: white;
+}
+
+.dark .btn-danger {
+  background-color: var(--dark-error);
+  color: white;
+}
+
+.dark .btn-warning {
+  background-color: var(--dark-warning);
+  color: black;
+}
+
+.dark .btn-success {
+  background-color: var(--dark-success);
+  color: black;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Status indicators */
+.status-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.status-secure {
+  background-color: var(--light-success);
+}
+
+.status-warning {
+  background-color: var(--light-warning);
+}
+
+.status-insecure {
+  background-color: var(--light-error);
+}
+
+.dark .status-secure {
+  background-color: var(--dark-success);
+}
+
+.dark .status-warning {
+  background-color: var(--dark-warning);
+}
+
+.dark .status-insecure {
+  background-color: var(--dark-error);
+}
+
+/* Console output */
+.console {
+  background-color: var(--dark-bg-secondary);
+  color: var(--dark-text-primary);
+  font-family: "Consolas", "Monaco", monospace;
+  padding: 15px;
+  border-radius: 5px;
+  height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.light .console {
+  border: 1px solid var(--light-border);
+}
+
+.dark .console {
+  border: 1px solid var(--dark-border);
+}
+
+.console-error {
+  color: var(--dark-error);
+}
+
+.console-warning {
+  color: var(--dark-warning);
+}
+
+.console-success {
+  color: var(--dark-success);
+}
+
+.console-info {
+  color: var(--dark-info);
+}
+
+/* Progress bars */
+.progress {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--light-accent);
+  transition: width 0.3s;
+}
+
+.dark .progress {
+  background-color: #444444;
+}
+
+.dark .progress-bar {
+  background-color: var(--dark-accent);
+}
+
+/* Risk score visualization */
+.risk-score {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.risk-bar {
+  height: 100%;
+  background: linear-gradient(to right, #00cc00, #ffcc00, #cc0000);
+  transition: width 0.3s;
+}
+
+.risk-indicator {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: black;
+  transition: left 0.3s;
+}
+
+.dark .risk-score {
+  background-color: #444444;
+}
+
+.dark .risk-indicator {
+  background-color: white;
+}
+
+/* Network details */
+.network-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.detail-section {
+  margin-bottom: 20px;
+}
+
+.detail-section h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--light-border);
+}
+
+.dark .detail-section h3 {
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.detail-item {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.detail-label {
+  font-weight: bold;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.detail-value {
+  flex-grow: 1;
+}
+
+/* Signal strength visualization */
+.signal-meter {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.signal-bar {
+  position: absolute;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--light-accent);
+  margin-right: 2px;
+}
+
+.dark .signal-bar {
+  background-color: var(--dark-accent);
+}
+
+.signal-bar-1 { height: 3px; left: 0; }
+.signal-bar-2 { height: 6px; left: 5px; }
+.signal-bar-3 { height: 9px; left: 10px; }
+.signal-bar-4 { height: 12px; left: 15px; }
+
+.signal-strength-high .signal-bar { background-color: var(--light-success); }
+.signal-strength-medium .signal-bar { background-color: var(--light-warning); }
+.signal-strength-low .signal-bar { background-color: var(--light-error); }
+
+.dark .signal-strength-high .signal-bar { background-color: var(--dark-success); }
+.dark .signal-strength-medium .signal-bar { background-color: var(--dark-warning); }
+.dark .signal-strength-low .signal-bar { background-color: var(--dark-error); }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .network-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

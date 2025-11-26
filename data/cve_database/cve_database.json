@@ -1,0 +1,96 @@
+{
+    "router_vendors": [
+        {
+            "cve_id": "CVE-2021-44228",
+            "description": "Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled.",
+            "model": "Multiple",
+            "firmware_version": "Multiple",
+            "severity": "Critical",
+            "cvss_score": 10.0
+        },
+        {
+            "cve_id": "CVE-2022-27255",
+            "description": "Netgear Smart Managed Pro Switches before 2.6.0.43 are vulnerable to authentication bypass due to incorrect access control.",
+            "model": "Netgear Smart Managed Pro Switches",
+            "firmware_version": "Before 2.6.0.43",
+            "severity": "Critical",
+            "cvss_score": 9.8
+        },
+        {
+            "cve_id": "CVE-2021-20090",
+            "description": "Multiple vulnerabilities in the web interfaces of Buffalo WSR-2533DHPL2 firmware version <= 1.02 and WSR-2533DHP3 firmware version <= 1.24 could allow remote unauthenticated attackers to execute arbitrary commands on the device.",
+            "model": "Buffalo WSR-2533DHPL2, WSR-2533DHP3",
+            "firmware_version": "WSR-2533DHPL2 <= 1.02, WSR-2533DHP3 <= 1.24",
+            "severity": "Critical",
+            "cvss_score": 9.8
+        },
+        {
+            "cve_id": "CVE-2017-6884",
+            "description": "The web-based management interface in Cisco RV110W, RV130W, and RV215W routers has a buffer overflow vulnerability in the Guest user account that could allow an authenticated, remote attacker to cause a denial of service condition or execute arbitrary code.",
+            "model": "Cisco RV110W, RV130W, RV215W",
+            "firmware_version": "Multiple",
+            "severity": "Critical",
+            "cvss_score": 9.0
+        },
+        {
+            "cve_id": "CVE-2018-10562",
+            "description": "Remote Command Execution vulnerability in GPON home routers from multiple vendors allows attackers to inject and execute arbitrary commands via the ?ping_IP parameter in the web interface.",
+            "model": "Multiple GPON Routers",
+            "firmware_version": "Multiple",
+            "severity": "Critical",
+            "cvss_score": 9.8
+        }
+    ],
+    "camera_vendors": [
+        {
+            "cve_id": "CVE-2018-10660",
+            "description": "The web interface in certain IP cameras including Foscam C2 and many other models rebranded from the original allows remote attackers to execute commands via the onvif_str.cgi str parameter.",
+            "model": "Foscam C2 and other OEM models",
+            "firmware_version": "Multiple",
+            "severity": "Critical",
+            "cvss_score": 9.8
+        },
+        {
+            "cve_id": "CVE-2019-11477",
+            "description": "The Linux kernel 2.6.29 through 5.0.8 has a buffer overflow in tcp_fragment in net/ipv4/tcp_output.c, which may be remotely exploitable against a system that performs IPsec encapsulation of packets. This affects various IP cameras running Linux kernels.",
+            "model": "Multiple IP Cameras",
+            "firmware_version": "Multiple Linux-based firmwares",
+            "severity": "High",
+            "cvss_score": 7.8
+        },
+        {
+            "cve_id": "CVE-2020-9587",
+            "description": "A buffer overflow in the web interface of Wyze Cam v2 and Wyze Cam Pan devices before 4.9.6.218 allows remote attackers to execute arbitrary code via crafted HTTP requests.",
+            "model": "Wyze Cam v2, Wyze Cam Pan",
+            "firmware_version": "< 4.9.6.218",
+            "severity": "Critical",
+            "cvss_score": 9.8
+        }
+    ],
+    "iot_vendors": [
+        {
+            "cve_id": "CVE-2019-15107",
+            "description": "Webmin through 1.920 allows authenticated remote code execution via the parameter in passwd_change.cgi, often used in IoT management interfaces.",
+            "model": "Multiple IoT Devices",
+            "firmware_version": "Webmin <= 1.920",
+            "severity": "Critical",
+            "cvss_score": 9.8
+        },
+        {
+            "cve_id": "CVE-2019-9506",
+            "description": "The Bluetooth BR/EDR specification up to and including version 5.1 permits sufficiently low encryption key length and does not prevent an attacker from influencing the key length negotiation. This allows practical brute-force attacks (the 'KNOB' attack) that can decrypt traffic and inject arbitrary ciphertext.",
+            "model": "Multiple IoT Devices",
+            "firmware_version": "Multiple",
+            "severity": "High",
+            "cvss_score": 8.0
+        },
+        {
+            "cve_id": "CVE-2018-17173",
+            "description": "Pre-authentication remote code execution vulnerability in the web server of D-Link DIR-600M Wireless N 150 Home Router with firmware version 3.04, 3.03, 3.02, and 2.12 allows attackers to execute arbitrary code by sending a crafted packet to the server.",
+            "model": "D-Link DIR-600M",
+            "firmware_version": "3.04, 3.03, 3.02, 2.12",
+            "severity": "Critical",
+            "cvss_score": 9.8
+        }
+    ]
+}

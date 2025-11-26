@@ -1,0 +1,98 @@
+{
+  "wpa_handshake": {
+    "description": "Captures WPA/WPA2 handshake for offline cracking",
+    "requirements": "Monitor mode, aircrack-ng suite, active clients",
+    "detection": "Difficulty depends on network traffic; needs active clients to capture handshake",
+    "mitigation": "Strong passwords (12+ random chars), WPA3 when available, 802.11w PMF"
+  },
+  "wps_pixie_dust": {
+    "description": "Attacks WPS implementation flaws to recover PIN without brute force",
+    "requirements": "Monitor mode, reaver or bully tools, vulnerable router",
+    "detection": "Quick attack against vulnerable routers with weak WPS implementations",
+    "mitigation": "Disable WPS or update router firmware, use router with patched WPS implementation"
+  },
+  "wps_brute_force": {
+    "description": "Tries all possible WPS PIN combinations until successful",
+    "requirements": "Monitor mode, reaver tool, patience (can take hours/days)",
+    "detection": "Slow attack that attempts PIN combinations sequentially",
+    "mitigation": "Disable WPS, enable rate limiting, use router with patched WPS implementation"
+  },
+  "wep_attack": {
+    "description": "Captures and analyzes WEP encrypted packets to recover the key",
+    "requirements": "Monitor mode, aircrack-ng suite, packet injection capability",
+    "detection": "Relatively quick attack requiring capture of sufficient IVs",
+    "mitigation": "Upgrade to WPA2/WPA3, WEP is fundamentally broken"
+  },
+  "deauthentication": {
+    "description": "Sends deauthentication frames to disconnect clients from network",
+    "requirements": "Monitor mode, aireplay-ng, packet injection capability",
+    "detection": "Very quick attack that disturbs network connectivity",
+    "mitigation": "Enable 802.11w Protected Management Frames (PMF), which prevents unauthenticated deauth frames"
+  },
+  "jamming": {
+    "description": "Disrupts wireless network communication by generating interference",
+    "requirements": "Monitor mode, specialized tools, packet injection capability",
+    "detection": "Continuous attack that prevents normal network operation",
+    "mitigation": "Physical security, RF shielding, detect and locate jamming sources"
+  },
+  "wpa_dictionary": {
+    "description": "Uses wordlists to crack captured WPA handshakes",
+    "requirements": "Captured handshake, CPU/GPU for cracking, wordlists",
+    "detection": "Offline attack after handshake capture, speed depends on hardware",
+    "mitigation": "Use strong random passwords not found in dictionaries"
+  },
+  "wpa_rule_based": {
+    "description": "Uses password patterns and rules to generate candidates for cracking",
+    "requirements": "Captured handshake, CPU/GPU for cracking, hashcat rules",
+    "detection": "Offline attack that tests patterns based on rules",
+    "mitigation": "Avoid predictable password patterns or modifications"
+  },
+  "wpa_mask_attack": {
+    "description": "Uses custom pattern masks to generate password candidates",
+    "requirements": "Captured handshake, CPU/GPU for cracking, hashcat mask syntax",
+    "detection": "Offline attack that generates passwords based on specified patterns",
+    "mitigation": "Use passwords that don't follow common patterns (like dates or keyboard sequences)"
+  },
+  "krack_attack": {
+    "description": "Key Reinstallation Attack against WPA2 implementation flaws",
+    "requirements": "Specialized tools, vulnerable targets, man-in-the-middle position",
+    "detection": "Exploits flaw in WPA2 to potentially decrypt traffic",
+    "mitigation": "Apply firmware updates to clients and access points"
+  },
+  "rogue_ap": {
+    "description": "Creates fake access point to capture credentials or traffic",
+    "requirements": "Two wireless interfaces, dhcp server, web server for captive portal",
+    "detection": "Creates deceptive network to lure clients into connecting",
+    "mitigation": "Verify network authenticity, use VPN, enable EAP authentication"
+  },
+  "pmkid_attack": {
+    "description": "Extracts PMKID from access point for offline cracking without clients",
+    "requirements": "Monitor mode, hcxdumptool, vulnerable access point",
+    "detection": "Quicker alternative to handshake capture that doesn't require clients",
+    "mitigation": "Strong WPA2/WPA3 passwords, disable roaming features when not needed"
+  },
+  "fragmentation_attack": {
+    "description": "Exploits frame aggregation and fragmentation flaws in WiFi",
+    "requirements": "Monitor mode, specialized tools for frame manipulation",
+    "detection": "Complex attack that targets WiFi frame processing implementation flaws",
+    "mitigation": "Apply firmware updates to patch FragAttacks vulnerabilities"
+  },
+  "karma_attack": {
+    "description": "Exploits clients that probe for previously connected networks",
+    "requirements": "Wireless adapter supporting hostapd or specialized rogue AP tools",
+    "detection": "Responds to client probe requests by impersonating networks clients are looking for",
+    "mitigation": "Don't auto-connect to networks, disable probe requests for saved networks when not in use"
+  },
+  "wps_offline_pin": {
+    "description": "Calculates WPS PIN based on access point information",
+    "requirements": "Knowledge of router model and algorithm vulnerabilities",
+    "detection": "Offline attack that computes probable PINs based on predictable generation algorithms",
+    "mitigation": "Disable WPS, use router with randomized PIN generation"
+  },
+  "owe_downgrade": {
+    "description": "Forces downgrade from Opportunistic Wireless Encryption to open network",
+    "requirements": "Monitor mode, specialized tools, man-in-the-middle position",
+    "detection": "Downgrades connection security by manipulating management frames",
+    "mitigation": "Use fully authenticated encryption (WPA2/WPA3) instead of OWE"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "airmon-ng_not_found": {
+    "error_message": "Command '['airmon-ng', 'start', 'interface']' returned non-zero exit status",
+    "diagnosis": "The airmon-ng command is not installed or not in PATH",
+    "solution": "Install aircrack-ng package: 'sudo apt install aircrack-ng' and ensure the tool is in your PATH."
+  },
+  "permission_denied": {
+    "error_message": "Permission denied",
+    "diagnosis": "The process lacks required privileges to access system resources or network interfaces",
+    "solution": "Run the tool with sudo or as root user, as most penetration testing tools require administrative privileges"
+  },
+  "interface_not_supported": {
+    "error_message": "Interface does not support monitoring mode",
+    "diagnosis": "Your WiFi adapter does not support monitor mode, which is required for many wireless security testing features",
+    "solution": "Use a compatible WiFi adapter that supports monitor mode (e.g., Alfa AWUS036ACH, TP-Link TL-WN722N v1)"
+  },
+  "no_interface_found": {
+    "error_message": "No interface found. Need to provide an interface name.",
+    "diagnosis": "The tool couldn't find any wireless network interfaces",
+    "solution": "Make sure your WiFi adapter is properly connected. Run 'iwconfig' to see available wireless interfaces"
+  },
+  "deauthentication_failed": {
+    "error_message": "Deauthentication failed. Packet injection may not be working.",
+    "diagnosis": "Your WiFi adapter may not support packet injection or the driver may not be properly configured",
+    "solution": "Use a WiFi adapter known to support packet injection, verify the driver supports injection, and ensure the target is in range"
+  },
+  "handshake_not_captured": {
+    "error_message": "WPA handshake not captured",
+    "diagnosis": "The deauthentication didn't cause any clients to reconnect, or clients may not be present",
+    "solution": "Ensure clients are connected to the target network, try increasing the number of deauthentication packets, and make sure you're close enough to the target"
+  },
+  "monitor_mode_failed": {
+    "error_message": "Failed to set monitor mode",
+    "diagnosis": "Unable to put the wireless interface into monitor mode due to driver issues or hardware limitations",
+    "solution": "Try manually setting monitor mode: 'sudo airmon-ng check kill' then 'sudo airmon-ng start [interface]', or try a different wireless adapter"
+  },
+  "subprocess_error": {
+    "error_message": "subprocess.CalledProcessError",
+    "diagnosis": "An external command failed to execute properly",
+    "solution": "Check that all required dependencies are installed, verify command paths and parameters are correct"
+  },
+  "wordlist_not_found": {
+    "error_message": "No such file or directory: 'wordlist.txt'",
+    "diagnosis": "The specified wordlist file does not exist or the path is incorrect",
+    "solution": "Verify the wordlist path is correct, download missing wordlists, or specify a different wordlist"
+  },
+  "cap_file_corrupt": {
+    "error_message": "Error processing capture file",
+    "diagnosis": "The capture file may be corrupted or in an unsupported format",
+    "solution": "Try capturing a new handshake or convert the file format using tools like Wireshark"
+  },
+  "scapy_import_error": {
+    "error_message": "ImportError: No module named scapy",
+    "diagnosis": "The Scapy library is not installed, which is needed for packet manipulation",
+    "solution": "Install Scapy using pip: 'pip install scapy'"
+  },
+  "tkinter_error": {
+    "error_message": "ImportError: No module named tkinter",
+    "diagnosis": "Tkinter is not installed, which is needed for the GUI",
+    "solution": "Install Tkinter package: 'sudo apt install python3-tk'"
+  },
+  "aircrack_error": {
+    "error_message": "Failed to open capture file for reading",
+    "diagnosis": "Aircrack-ng can't open the capture file due to format issues or permissions",
+    "solution": "Verify the file exists, has read permissions, and is a valid capture file format"
+  },
+  "wps_pin_not_found": {
+    "error_message": "Failed to recover WPS PIN",
+    "diagnosis": "The WPS PIN could not be recovered, possibly due to router protections or too many attempts",
+    "solution": "Try using a different attack method, ensure router has WPS enabled and is vulnerable to PIN recovery attacks"
+  },
+  "network_connection_error": {
+    "error_message": "Failed to connect to network",
+    "diagnosis": "Could not establish connection to the target network",
+    "solution": "Verify the password or credentials are correct, ensure the network is in range, and check for MAC filtering"
+  },
+  "hashcat_gpu_error": {
+    "error_message": "No OpenCL-compatible platform found",
+    "diagnosis": "Hashcat cannot find a compatible GPU for accelerated cracking",
+    "solution": "Verify GPU drivers are installed correctly, or use CPU-based cracking with -D 1 option"
+  },
+  "no_targets_found": {
+    "error_message": "No targets found",
+    "diagnosis": "No wireless networks were detected during the scan",
+    "solution": "Ensure your adapter is in monitor mode, you're within range of networks, and try increasing scan duration"
+  },
+  "disk_space_error": {
+    "error_message": "No space left on device",
+    "diagnosis": "Not enough disk space for capture files or temporary data",
+    "solution": "Free up disk space, specify a different output directory with more space, or clean up old capture files"
+  },
+  "macchanger_error": {
+    "error_message": "macchanger: Can't change MAC address",
+    "diagnosis": "Failed to change the MAC address of the interface",
+    "solution": "Ensure the interface is down before changing MAC, and run with sudo/root privileges"
+  }
+}

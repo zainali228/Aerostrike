@@ -1,0 +1,192 @@
+{
+  "http": [
+    {
+      "title": "Apache HTTP Server 2.4.49 - Path Traversal & Remote Code Execution (RCE)",
+      "path": "/usr/share/exploitdb/exploits/multiple/webapps/50383.py",
+      "edb_id": "50383",
+      "cve_id": "CVE-2021-41773",
+      "version": "2.4.49"
+    },
+    {
+      "title": "Apache 2.4.50 - Path Traversal & Remote Code Execution (RCE)",
+      "path": "/usr/share/exploitdb/exploits/multiple/webapps/50512.py",
+      "edb_id": "50512",
+      "cve_id": "CVE-2021-42013",
+      "version": "2.4.50"
+    },
+    {
+      "title": "Apache Tomcat 7.0.0 to 7.0.81/8.0.0 to 8.0.44/8.5.0 to 8.5.22/9.0.0.M1 to 9.0.0.M26 - JSP Upload Bypass",
+      "path": "/usr/share/exploitdb/exploits/java/webapps/42966.py",
+      "edb_id": "42966",
+      "cve_id": "CVE-2017-12617",
+      "version": "7.0"
+    }
+  ],
+  "ssh": [
+    {
+      "title": "OpenSSH 7.7 - Username Enumeration",
+      "path": "/usr/share/exploitdb/exploits/linux/remote/45939.py",
+      "edb_id": "45939",
+      "cve_id": "CVE-2018-15473",
+      "version": "7.7"
+    },
+    {
+      "title": "OpenSSH 2.3 < 7.7 - Username Enumeration",
+      "path": "/usr/share/exploitdb/exploits/linux/remote/45233.py",
+      "edb_id": "45233",
+      "cve_id": "CVE-2018-15473",
+      "version": "2.3"
+    }
+  ],
+  "ftp": [
+    {
+      "title": "vsftpd 2.3.4 - Backdoor Command Execution",
+      "path": "/usr/share/exploitdb/exploits/unix/remote/49757.py",
+      "edb_id": "49757",
+      "version": "2.3.4"
+    },
+    {
+      "title": "ProFTPD 1.3.5 - 'mod_copy' Command Execution (Metasploit)",
+      "path": "/usr/share/exploitdb/exploits/linux/remote/37262.rb",
+      "edb_id": "37262",
+      "cve_id": "CVE-2015-3306",
+      "version": "1.3.5"
+    }
+  ],
+  "smb": [
+    {
+      "title": "SMB - 'EternalBlue' SMB Remote Code Execution (MS17-010)",
+      "path": "/usr/share/exploitdb/exploits/windows/remote/42315.py",
+      "edb_id": "42315",
+      "cve_id": "CVE-2017-0144",
+      "version": "1.0"
+    },
+    {
+      "title": "Samba 3.5.0 < 4.6.4/4.5.10/4.4.14 - 'is_known_pipename()' Arbitrary Module Loading",
+      "path": "/usr/share/exploitdb/exploits/linux/remote/42060.py",
+      "edb_id": "42060",
+      "cve_id": "CVE-2017-7494",
+      "version": "3.5.0"
+    }
+  ],
+  "dns": [
+    {
+      "title": "BIND 9 - TSIG Buffer Overflow",
+      "path": "/usr/share/exploitdb/exploits/unix/remote/248.c",
+      "edb_id": "248",
+      "cve_id": "CVE-2001-0010",
+      "version": "9.1.0"
+    }
+  ],
+  "telnet": [
+    {
+      "title": "Multiple Telnet Daemons - Multiple Vulnerabilities",
+      "path": "/usr/share/exploitdb/exploits/linux/remote/40962.py",
+      "edb_id": "40962",
+      "version": "1.0"
+    }
+  ],
+  "smtp": [
+    {
+      "title": "Exim 4.87 - 4.91 - String_Append Buffer Overflow (Metasploit)",
+      "path": "/usr/share/exploitdb/exploits/linux/remote/44971.rb",
+      "edb_id": "44971",
+      "cve_id": "CVE-2018-6789",
+      "version": "4.87"
+    }
+  ],
+  "wordpress": [
+    {
+      "title": "WordPress Core 5.0.0 - Crop-image Shell Upload (Metasploit)",
+      "path": "/usr/share/exploitdb/exploits/php/webapps/46662.rb",
+      "edb_id": "46662",
+      "cve_id": "CVE-2019-8942",
+      "version": "5.0.0"
+    }
+  ],
+  "nginx": [
+    {
+      "title": "Nginx 1.3.9 < 1.4.0 - Chuncked Encoding Stack Buffer Overflow (Metasploit)",
+      "path": "/usr/share/exploitdb/exploits/linux/remote/25775.rb",
+      "edb_id": "25775",
+      "cve_id": "CVE-2013-2028",
+      "version": "1.3.9"
+    }
+  ],
+  "php": [
+    {
+      "title": "PHP 8.1.0-dev - 'User-Agent' Remote Code Execution",
+      "path": "/usr/share/exploitdb/exploits/php/webapps/49933.py",
+      "edb_id": "49933",
+      "version": "8.1.0-dev"
+    }
+  ],
+  "chrome": [
+    {
+      "title": "Google Chrome 88.0.4324.146 - 'Iframe' Use After Free",
+      "path": "/usr/share/exploitdb/exploits/windows/local/49679.html",
+      "edb_id": "49679",
+      "version": "88.0.4324.146"
+    }
+  ],
+  "firefox": [
+    {
+      "title": "Mozilla Firefox 3.6.16/3.5.17 - mChannel Use-After-Free",
+      "path": "/usr/share/exploitdb/exploits/windows/local/18871.html",
+      "edb_id": "18871",
+      "version": "3.6.16"
+    }
+  ],
+  "edge": [
+    {
+      "title": "Microsoft Edge Chakra - Type Confusion",
+      "path": "/usr/share/exploitdb/exploits/windows/local/44994.js",
+      "edb_id": "44994",
+      "version": "1.0"
+    }
+  ],
+  "iis": [
+    {
+      "title": "Microsoft IIS WebDav - 'ScStoragePathFromUrl' Remote Buffer Overflow",
+      "path": "/usr/share/exploitdb/exploits/windows/remote/41738.py",
+      "edb_id": "41738",
+      "cve_id": "CVE-2017-7269",
+      "version": "6.0"
+    }
+  ],
+  "router": [
+    {
+      "title": "D-Link DSL-2750B - OS Command Injection",
+      "path": "/usr/share/exploitdb/exploits/hardware/webapps/37516.py",
+      "edb_id": "37516",
+      "version": "1.01"
+    },
+    {
+      "title": "NETGEAR DGN2200v1/v2/v3/v4 - Authentication Bypass",
+      "path": "/usr/share/exploitdb/exploits/hardware/webapps/49930.py",
+      "edb_id": "49930",
+      "cve_id": "CVE-2021-31802",
+      "version": "1.0"
+    },
+    {
+      "title": "TP-Link TL-WR840N - Remote Code Execution",
+      "path": "/usr/share/exploitdb/exploits/hardware/webapps/43144.py",
+      "edb_id": "43144",
+      "version": "0.9.1 4.0"
+    }
+  ],
+  "camera": [
+    {
+      "title": "AXIS Network Camera - Remote Root Authentication Bypass",
+      "path": "/usr/share/exploitdb/exploits/hardware/webapps/42165.py",
+      "edb_id": "42165",
+      "version": "1.0"
+    },
+    {
+      "title": "D-Link DCS-2530L - Authentication Bypass",
+      "path": "/usr/share/exploitdb/exploits/hardware/webapps/42786.py",
+      "edb_id": "42786",
+      "version": "1.0"
+    }
+  ]
+}

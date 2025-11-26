@@ -1,0 +1,122 @@
+{
+  "CVE-2017-13077": {
+    "description": "Key Reinstallation Attack (KRACK) affecting WPA2",
+    "severity": "High",
+    "affected_systems": "WPA2 WiFi networks",
+    "mitigation": "Update router firmware and client devices"
+  },
+  "CVE-2018-17019": {
+    "description": "Timing-based side-channel attack against WPA3",
+    "severity": "Medium",
+    "affected_systems": "WPA3 WiFi networks",
+    "mitigation": "Apply firmware updates when available"
+  },
+  "CVE-2018-0101": {
+    "description": "Memory corruption vulnerability in Cisco ASA",
+    "severity": "Critical",
+    "affected_systems": "Cisco ASA devices with WebVPN enabled",
+    "mitigation": "Apply Cisco security patches"
+  },
+  "CVE-2017-0144": {
+    "description": "SMB vulnerability exploited by EternalBlue/WannaCry",
+    "severity": "Critical",
+    "affected_systems": "Windows SMB servers (Windows 7, Server 2008, etc.)",
+    "mitigation": "Apply MS17-010 security update"
+  },
+  "CVE-2020-0796": {
+    "description": "SMBv3 compression vulnerability (SMBGhost)",
+    "severity": "Critical",
+    "affected_systems": "Windows 10 versions 1903/1909, Server 2019",
+    "mitigation": "Apply KB4551762 security update"
+  },
+  "CVE-2019-17126": {
+    "description": "Buffer overflow vulnerability in Linksys WRT54GL routers",
+    "severity": "High",
+    "affected_systems": "Linksys WRT54GL devices",
+    "mitigation": "Update to latest firmware or replace device"
+  },
+  "CVE-2019-15126": {
+    "description": "Kr00k vulnerability allowing decryption of WPA2 traffic",
+    "severity": "Medium",
+    "affected_systems": "Broadcom and Cypress WiFi chips",
+    "mitigation": "Update client and AP firmware"
+  },
+  "CVE-2017-11176": {
+    "description": "Linux kernel mq_notify race condition",
+    "severity": "High",
+    "affected_systems": "Linux kernel before 4.11.9",
+    "mitigation": "Update to kernel 4.11.9 or later"
+  },
+  "CVE-2021-34527": {
+    "description": "Windows Print Spooler Remote Code Execution (PrintNightmare)",
+    "severity": "Critical",
+    "affected_systems": "Windows Print Spooler service",
+    "mitigation": "Install security updates, disable Print Spooler service"
+  },
+  "CVE-2021-45388": {
+    "description": "Remote code execution vulnerability in Log4j (Log4Shell)",
+    "severity": "Critical",
+    "affected_systems": "Apache Log4j 2.0-2.14.1",
+    "mitigation": "Update Log4j to 2.15.0 or later"
+  },
+  "CVE-2018-11599": {
+    "description": "Pixie Dust attack affecting WPS implementation",
+    "severity": "High",
+    "affected_systems": "Many WiFi routers with WPS enabled",
+    "mitigation": "Disable WPS or update router firmware"
+  },
+  "CVE-2019-6223": {
+    "description": "Authentication bypass in various IoT devices",
+    "severity": "High",
+    "affected_systems": "iLnkP2P-enabled IoT devices",
+    "mitigation": "Use firewall to block external access, update firmware"
+  },
+  "CVE-2020-25506": {
+    "description": "TP-Link Archer authentication bypass",
+    "severity": "High",
+    "affected_systems": "TP-Link Archer routers",
+    "mitigation": "Update to latest firmware"
+  },
+  "CVE-2020-24586": {
+    "description": "Fragment and Forge: Breaking Wi-Fi Through Frame Aggregation",
+    "severity": "Medium",
+    "affected_systems": "Most WiFi devices using 802.11-based protocols",
+    "mitigation": "Use WPA3 where available, apply device firmware updates"
+  },
+  "CVE-2020-10713": {
+    "description": "GRUB2 boot loader security bypass (BootHole)",
+    "severity": "High",
+    "affected_systems": "Systems using GRUB2 and Secure Boot",
+    "mitigation": "Apply updates to GRUB bootloader"
+  },
+  "CVE-2021-28799": {
+    "description": "Auth bypass vulnerability in QNAP NAS devices",
+    "severity": "Critical",
+    "affected_systems": "QNAP NAS HBS 3 Hybrid Backup Sync",
+    "mitigation": "Update to latest version of HBS"
+  },
+  "CVE-2021-44228": {
+    "description": "Remote code execution in Apache Log4j (Log4Shell)",
+    "severity": "Critical",
+    "affected_systems": "Systems using Apache Log4j 2.0-2.14.1",
+    "mitigation": "Update to Log4j 2.16.0 or later"
+  },
+  "CVE-2021-1497": {
+    "description": "Cisco HyperFlex HX command injection vulnerability",
+    "severity": "Critical",
+    "affected_systems": "Cisco HyperFlex HX Data Platform",
+    "mitigation": "Apply latest security patch from Cisco"
+  },
+  "CVE-2021-41773": {
+    "description": "Path traversal vulnerability in Apache HTTP Server",
+    "severity": "Critical",
+    "affected_systems": "Apache HTTP Server 2.4.49",
+    "mitigation": "Update to Apache HTTP Server 2.4.50 or later"
+  },
+  "CVE-2022-22965": {
+    "description": "Spring Framework RCE vulnerability (Spring4Shell)",
+    "severity": "Critical",
+    "affected_systems": "Spring Framework, JDK 9+",
+    "mitigation": "Update Spring Framework to patched version"
+  }
+}
